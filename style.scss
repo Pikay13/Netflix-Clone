@@ -106,16 +106,20 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    width: 60%;
+    width: 50%;
 
     input {
         padding: 1.5rem 1rem;
         width: 70%;
         font-size: 1em;
         margin: 0;
-        border-radius: 3px 0 0 3px;
+        border-radius: 1px 0 0 1px;
         border: 1px solid #FFFFFF;
         outline: none;
+
+        &:focus {
+            border: 1px solid #4285F4;
+        }
     }
 
     button {
@@ -125,7 +129,7 @@
         border: 1px solid #E50914;
         font-size: 1.625rem;
         font-weight: 500;
-        border-radius: 0 3px 3px 0;
+        border-radius: 0 1px 1px 0;
         cursor: pointer;
 
         &:hover {
@@ -222,15 +226,15 @@ p {
 
 @media only screen and (max-width: 948px) and (min-width: 240px) {
     #landing_page1 {
-        height: 80vh;
+        height: 70vh;
     }
 
     #back {
-        height: 80vh;
+        height: 70vh;
     }
 
     #overlap {
-        height: 80vh;
+        height: 70vh;
     }
 
     #navbar {
@@ -263,7 +267,6 @@ p {
         text-align: justify;
 
         input {
-            display: flex;
             border-radius: 1px 1px;
             padding: .8rem .5rem;
             width: min(24rem, 100%);
