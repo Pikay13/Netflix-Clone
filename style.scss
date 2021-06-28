@@ -7,15 +7,14 @@
 }
 
 #landing_page1 {
-    min-height: 90vh;
+    min-height: 98vh;
     border-bottom: 8px solid #222;
 
 }
 
 #back {
-    object-position: center;
     object-fit: cover;
-    min-height: 90vh;
+    min-height: 98vh;
     width: 100%;
     position: absolute;
     z-index: -2;
@@ -24,7 +23,7 @@
 #overlap {
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
-    min-height: 90vh;
+    min-height: 98vh;
     width: 100%;
     position: absolute;
     z-index: -1;
@@ -82,7 +81,6 @@
     align-items: center;
     flex-direction: column;
     padding-top: 10%;
-    width: auto;
     text-align: center;
 
     h1 {
@@ -183,7 +181,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
-
+    min-height: 50vh;
 }
 
 .card {
@@ -202,17 +200,17 @@
 }
 
 @media only screen and (max-width: 948px) and (min-width: 240px) {
-    // #landing_page1 {
-    //     minheight: 70vh;
-    // }
+    #landing_page1 {
+        min-height: 70vh;
+    }
 
-    // #back {
-    //     height: 70vh;
-    // }
+    #back {
+        min-height: 70vh;
+    }
 
-    // #overlap {
-    //     height: 70vh;
-    // }
+    #overlap {
+        min-height: 70vh;
+    }
 
     #navbar {
         padding-top: 1rem;
@@ -222,7 +220,6 @@
         height: 50px;
         margin-left: .7rem;
     }
-
 
     #btn {
         right: 1rem;
@@ -245,6 +242,7 @@
         input {
             border-radius: 1px 1px;
             padding: .8rem .5rem;
+            width: 100%;
         }
 
         button {
@@ -275,15 +273,29 @@
         }
 
         p {
-            width: 70%;
             font-size: 1.1rem;
         }
     }
 
-    #landing_page2 {
+    .our-card {
         grid-template-columns: 1fr;
         text-align: center;
-        border-bottom: 8px solid #222;
+        max-height: 50vh;
+    }
+
+    .card {
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
     }
 
     .tvphoto1 {
@@ -296,16 +308,7 @@
         width: 15rem;
     }
 
-    #landing_page3 {
-        grid-template-columns: 1fr;
-        text-align: center;
-        border-bottom: 8px solid #222;
-    }
-
     .stranger_things {
-        height: 15rem;
         width: 15rem;
-        object-fit: cover;
     }
-
 }
