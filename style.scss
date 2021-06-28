@@ -45,7 +45,6 @@
 
 
 #btn {
-    display: inline-block;
     position: absolute;
     right: 5rem;
 
@@ -105,12 +104,13 @@
 .user_box {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 1rem;
-    width: 50%;
+    width: 60%;
 
     input {
         padding: 1.5rem 1rem;
-        width: 90%;
+        width: 70%;
         font-size: 1em;
         margin: 0;
         border-radius: 3px 0 0 3px;
@@ -120,11 +120,10 @@
 
     button {
         background-color: #E50914;
-        width: 40%;
-        padding: 1.3rem 1rem;
+        padding: 1.155rem 1rem;
         color: white;
         border: 1px solid #E50914;
-        font-size: 1.4rem;
+        font-size: 1.625rem;
         font-weight: 500;
         border-radius: 0 3px 3px 0;
         cursor: pointer;
@@ -221,17 +220,17 @@ p {
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 948px) and (min-width: 240px) {
     #landing_page1 {
-        height: 70vh;
+        height: 80vh;
     }
 
     #back {
-        height: 70vh;
+        height: 80vh;
     }
 
     #overlap {
-        height: 70vh;
+        height: 80vh;
     }
 
     #navbar {
@@ -283,7 +282,7 @@ p {
 
     #container {
         display: grid;
-        margin: 2rem 1rem 1rem 1rem;
+        margin: 0 1rem;
 
         &>* {
             justify-self: center;
