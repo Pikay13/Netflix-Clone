@@ -111,14 +111,13 @@
     input {
         padding: 1.5rem 1rem;
         width: 70%;
-        font-size: 1em;
-        margin: 0;
+        font-size: 1rem;
         border-radius: 1px 0 0 1px;
         border: 1px solid #FFFFFF;
         outline: none;
 
         &:focus {
-            border: 1px solid #F4B400;
+            border: 1px solid blue;
         }
     }
 
@@ -264,19 +263,16 @@ p {
     .user_box {
         flex-direction: column;
         width: 100%;
-        text-align: justify;
 
         input {
             border-radius: 1px 1px;
             padding: .8rem .5rem;
-            width: min(24rem, 100%);
+            // width: 100%;
         }
 
         button {
             padding: .5rem 1rem;
             margin-top: 1rem;
-            height: auto;
-            width: auto;
             font-size: 1rem;
             font-weight: 500;
             border-radius: 1px;
@@ -314,8 +310,7 @@ p {
     }
 
     #txt2 {
-        width: auto;
-        height: fit-content;
+        width: fit-content;
         margin: 1rem;
     }
 
@@ -346,8 +341,7 @@ p {
     }
 
     #txt3 {
-        width: auto;
-        height: fit-content;
+        width: fit-content;
 
         h1 {
             font-size: 1.8rem;
