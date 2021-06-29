@@ -1,7 +1,8 @@
+// const faqBtn = document.querySelectorAll(".faq-btn");
+// const plusIcon = document.querySelectorAll(".plus-icon");
+// for (let i = 0; i < faqBtn.length; i++) {
+//     faqBtn[i].addEventListener('click', () => {
+//         plusIcon[i].classList.toggle("rotate");
+//     })
+// }
 "use strict";
-
-var cta = document.querySelector(".faq-btn");
-var txtPortion = document.querySelector("faq-txt");
-cta.addEventListener("click", function () {
-  console.log("clicked");
-});

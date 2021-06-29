@@ -9,12 +9,13 @@
 #landing_page1 {
     min-height: 98vh;
     border-bottom: 8px solid #222;
+    position: relative;
 
 }
 
 #back {
     object-fit: cover;
-    height: 98vh;
+    min-height: 98vh;
     width: 100%;
     position: absolute;
     z-index: -2;
@@ -31,21 +32,19 @@
 
 #navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: fit-content;
+    padding: 0 2rem;
     z-index: 1;
 }
 
 .logo {
-    object-fit: contain;
     height: 90px;
-    margin-left: 2rem;
 }
 
 
 #btn {
-    position: absolute;
-    right: 5rem;
+    display: flex;
 
     #lang_btn {
         background-color: black;
@@ -60,6 +59,7 @@
             background-color: #000000;
             border: none;
             color: #FFFFFF;
+            border: #000000;
             outline: none;
         }
     }
@@ -114,21 +114,29 @@
         border: 1px solid #FFFFFF;
         outline: none;
     }
+}
 
-    button {
-        background-color: #E50914;
-        padding: 1.155rem 1rem;
-        color: white;
-        border: 1px solid #E50914;
-        font-size: 1.625rem;
-        font-weight: 500;
-        border-radius: 0 1px 1px 0;
-        cursor: pointer;
+button {
+    background-color: #E50914;
+    padding: 1.155rem 1rem;
+    color: white;
+    border: 1px solid #E50914;
+    font-size: 1.625rem;
+    font-weight: 500;
+    border-radius: 0 1px 1px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 
-        &:hover {
-            background-color: #ec0914;
-        }
+    &:hover {
+        background-color: #ec0914;
     }
+}
+
+
+.icon-arrow {
+    fill: #FFFFFF;
 }
 
 .photo_container {
@@ -234,17 +242,37 @@ ul {
     }
 }
 
+
 .faq-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #303030;
     color: #FFFFFF;
     border: none;
     padding: .8em 2.2em .8em 1.2em;
     font-size: 1.625rem;
-    text-align: left;
     margin-bottom: 1px;
     list-style: none;
     cursor: pointer;
     user-select: none;
+}
+
+
+.plus-icon {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.accordian[open] {
+    .plus-icon {
+        transform: rotate(45deg);
+    }
+}
+
+.rotate {
+    transform: rotate(45deg);
 }
 
 .faq-txt {
@@ -253,7 +281,6 @@ ul {
     font-size: 1.625rem;
     font-weight: 400;
     padding: .8em 2.2em .8em 1.2em;
-    transition: all .3s ease-in;
 }
 
 .bottom-container {
@@ -295,7 +322,7 @@ ul {
     }
 }
 
-@media only screen and (max-width: 948px) and (min-width: 240px) {
+@media only screen and (max-width: 1040px) and (min-width: 240px) {
     #landing_page1 {
         min-height: 70vh;
     }
@@ -427,6 +454,7 @@ ul {
 
     .faq-btn {
         font-size: 1.4rem;
+        outline: none;
     }
 
     .faq-txt {
