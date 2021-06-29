@@ -14,7 +14,7 @@
 
 #back {
     object-fit: cover;
-    min-height: 98vh;
+    height: 98vh;
     width: 100%;
     position: absolute;
     z-index: -2;
@@ -113,10 +113,6 @@
         border-radius: 1px 0 0 1px;
         border: 1px solid #FFFFFF;
         outline: none;
-
-        &:focus {
-            border: 1px solid blue;
-        }
     }
 
     button {
@@ -137,9 +133,9 @@
 
 .photo_container {
     display: flex;
-    margin: 0 auto;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .tvphoto1 {
@@ -147,7 +143,6 @@
     object-fit: cover;
     z-index: 2;
     position: absolute;
-
 }
 
 .tvphoto2 {
@@ -163,6 +158,11 @@
     object-fit: cover;
 }
 
+.rajma-chawal-img {
+    width: 27rem;
+    object-fit: cover;
+}
+
 .card-parent {
     display: grid;
     grid-template-columns: 1fr 80vw 1fr;
@@ -170,6 +170,7 @@
     padding: 2rem 0;
     border-bottom: 8px solid #222;
     overflow: hidden;
+    color: #FFFFFF;
 
     &>* {
         grid-column: 2/3;
@@ -182,6 +183,7 @@
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     min-height: 50vh;
+    overflow: hidden;
 }
 
 .card {
@@ -196,6 +198,100 @@
     p {
         font-size: 1.625rem;
         font-weight: 400;
+    }
+}
+
+.faq-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 8px solid #222;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 2rem;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 60%;
+    margin: 1rem;
+    text-align: left;
+
+    li {
+        width: 100%;
+        margin: .2rem 0;
+    }
+}
+
+.faq-btn {
+    background-color: #303030;
+    color: #FFFFFF;
+    border: none;
+    padding: .8em 2.2em .8em 1.2em;
+    font-size: 1.625rem;
+    text-align: left;
+    margin-bottom: 1px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.faq-txt {
+    margin-bottom: .5rem;
+    background-color: #303030;
+    font-size: 1.625rem;
+    font-weight: 400;
+    padding: .8em 2.2em .8em 1.2em;
+    transition: all .3s ease-in;
+}
+
+.bottom-container {
+    margin: 2rem;
+    width: 60%;
+    text-align: center;
+
+    .user-box2 {
+        display: flex;
+    }
+
+    input {
+        padding: 1.5rem 1rem;
+        font-size: 1.125rem;
+        border-radius: 1px 0 0 1px;
+        border: 1px solid #FFFFFF;
+        outline: none;
+        width: 80%;
+    }
+
+    button {
+        background-color: #E50914;
+        padding: 1.23rem 1rem;
+        color: white;
+        border: 1px solid #E50914;
+        font-size: 1.625rem;
+        font-weight: 500;
+        border-radius: 0 1px 1px 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ec0914;
+        }
+    }
+
+    p {
+        font-size: 1.125rem;
+        margin: 1rem;
     }
 }
 
@@ -243,10 +339,6 @@
             border-radius: 1px 1px;
             padding: .8rem .5rem;
             width: 100%;
-
-            &:focus {
-                border: 2px solid green;
-            }
         }
 
         button {
@@ -290,14 +382,14 @@
     .card {
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.625rem;
             font-weight: 600;
             line-height: 1.1;
             margin-bottom: 1rem;
         }
 
         p {
-            font-size: 1.1rem;
+            font-size: 1.125rem;
             font-weight: 400;
         }
     }
@@ -309,10 +401,69 @@
 
     .tvphoto2 {
         height: 12rem;
-        width: 15rem;
+        width: 12rem;
+        background-color: #000000;
     }
 
     .stranger_things {
         width: 15rem;
+    }
+
+    .rajma-chawal-img {
+        width: 15rem;
+    }
+
+    .faq-section {
+        padding: 2rem 0;
+
+        h1 {
+            font-size: 1.625rem;
+        }
+
+        ul {
+            width: 100%;
+        }
+    }
+
+    .faq-btn {
+        font-size: 1.4rem;
+    }
+
+    .faq-txt {
+        font-size: 1.4rem;
+    }
+
+    .bottom-container {
+        width: 100%;
+
+        h1 {
+            font-size: 1.8rem;
+            width: 100%;
+        }
+
+        p {
+            font-weight: 500;
+        }
+
+        .user-box2 {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            input {
+                border-radius: 1px 1px;
+                padding: .8rem .5rem;
+                width: 90%;
+                font-size: .9rem;
+            }
+
+            button {
+                border-radius: 1px 1px;
+                padding: .5rem 1rem;
+                margin-top: 2rem;
+                font-size: 1rem;
+                width: fit-content;
+            }
+        }
     }
 }
