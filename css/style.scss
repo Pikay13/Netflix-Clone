@@ -53,7 +53,7 @@
         padding: .5rem 1rem;
         font-size: 1em;
         border-radius: 3px;
-        margin: 0 1.5rem;
+        margin-right: 1.5rem;
 
         #lang_selection {
             background-color: #000000;
@@ -232,7 +232,7 @@ ul {
     flex-direction: column;
     align-items: center;
     list-style: none;
-    width: 60%;
+    width: 55%;
     margin: 1rem;
     text-align: left;
 
@@ -250,7 +250,7 @@ ul {
     background-color: #303030;
     color: #FFFFFF;
     border: none;
-    padding: .8em 2.2em .8em 1.2em;
+    padding: .2em 1.2em;
     font-size: 1.625rem;
     margin-bottom: 1px;
     list-style: none;
@@ -322,6 +322,48 @@ ul {
     }
 }
 
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 8px solid #222;
+    background-color: #000000;
+    padding: 4rem 20% 0rem 20%;
+    color: #757575;
+}
+
+.footer-items {
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.ul-items {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    margin: 0;
+
+    li {
+        margin: .5rem auto;
+        font-size: .725rem;
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px solid #757575;
+            }
+        }
+    }
+}
+
+#copyright {
+    display: block;
+    margin: 1rem auto;
+    font-size: .8rem;
+}
+
 @media only screen and (max-width: 1040px) and (min-width: 240px) {
     #landing_page1 {
         min-height: 70vh;
@@ -336,12 +378,12 @@ ul {
     }
 
     #navbar {
-        padding-top: 1rem;
+        padding: 1rem;
     }
 
     .logo {
         height: 50px;
-        margin-left: .7rem;
+        margin-left: 0rem;
     }
 
     #btn {
@@ -493,5 +535,13 @@ ul {
                 width: fit-content;
             }
         }
+    }
+
+    .footer-section {
+        padding: 1rem 3rem 0 3rem;
+    }
+
+    .ul-items {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
